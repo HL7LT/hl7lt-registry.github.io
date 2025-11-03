@@ -242,3 +242,11 @@ enable_progressbar: true # enables a horizontal progress bar linked to the verti
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 
 third_party_libraries: {}
+
+# JS minifier configuration
+jekyll-minifier:
+  compress_html: true
+  compress_css: true
+  compress_js: true
+  uglifier_args:
+    harmony: true
