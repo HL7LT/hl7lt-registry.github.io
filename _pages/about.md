@@ -1,34 +1,69 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: National HL7® FHIR® Implementation Guide Registry for Lithuania
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
+  image: lt-heather.png
+  image_circular: false
+  
+selected_papers: false
+social: false
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
+  enabled: false
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+## Welcome to the HL7 Lithuania Registry
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+The **HL7 Lithuania Registry** is the national hub for HL7® FHIR® Implementation Guides, terminology resources, and community collaboration.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+It provides a transparent and open platform to support the adoption of FHIR® standards in Lithuanian healthcare — enabling interoperability, data quality, and innovation.
+
+---
+
+## Explore the Registry
+
+<div class="home-grid">
+
+  <div class="home-section">
+    <h3>Implementation Guides</h3>
+    <p>Access all national HL7 FHIR® Implementation Guides, including LT Base and specialized guides for clinical domains.</p>
+    <a href="/builds/" class="home-button">Go to Builds</a>
+  </div>
+
+  <div class="home-section">
+    <h3>Terminology</h3>
+    <p>Browse Lithuanian FHIR® terminology resources such as code systems, value sets, and concept maps supporting national IGs.</p>
+    <a href="/terminology/" class="home-button">Explore Terminology</a>
+  </div>
+
+  <div class="home-section">
+    <h3>Community</h3>
+    <p>Join the HL7 Lithuania community, contribute on GitHub, and collaborate on open-source FHIR® projects and resources.</p>
+    <a href="/community/" class="home-button">Join the Community</a>
+  </div>
+
+</div>
+
+---
+
+## About This Registry
+
+All HL7 Lithuania Implementation Guides follow consistent and reusable publishing principles:
+
+- **Package ID:** `lt.hl7.fhir.IGCODE`  
+- **Canonical URL:** `https://hl7.lt/fhir/IGCODE`  
+- **Publication:** automated via the [HL7 auto-IG builder](https://github.com/FHIR/auto-ig-builder)
+
+All builds and resources are maintained openly through the [HL7LT GitHub organization](https://github.com/HL7LT).
+
+---
+
+<div style="text-align:center; margin-top:1.5rem; font-size:0.9rem; color:#444;">
+  HL7 Lithuania Registry is developed and maintained by the national HL7 community.<br>
+  Open source. Collaborative. Interoperable.
+</div>

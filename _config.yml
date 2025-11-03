@@ -2,24 +2,25 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title: HL7 Lithuania Registry # the website title (if blank, full name will be used instead)
+first_name: HL7
+middle_name: Lithuania
+last_name: Registry
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+  For questions or contributions, contact HL7 Lithuania via GitHub or the HL7 LT website.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Official website of HL7 Lithuania Registry providing access to national FHIR Implementation Guides and related resources.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+ Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the 
+  <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Maintained by <a href="https://github.com/HL7LT" target="_blank">HL7 Lithuania</a>. 
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. # add your own keywords or leave empty
+keywrods: hl7, fhir, lithuania, registry, healthcare, implementation guide
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🇱🇹 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://alshedivat.github.io # the base hostname & protocol for your site
-baseurl: /al-folio # the subpath of your site, e.g. /blog/. Leave blank for root
+url: https://hl7lt.github.io # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -83,21 +84,11 @@ google_site_verification: # your google-site-verification ID (Google Search Cons
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
-# Blog
+# Builds
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
-lsi: false # produce an index for related posts
-
-# Pagination
-pagination:
-  enabled: true
-
-related_blog_posts:
-  enabled: true
-  max_related: 5
+blog_name: Builds
+blog_description: HL7 Lithuania Implementation Guide Builds
 
 # Giscus comments (RECOMMENDED)
 # Follow instructions on https://giscus.app/ to setup for your repo to fill out the information below.
@@ -192,6 +183,8 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - assets/jupyter/blog.ipynb
+  - assets/jupyter/
 keep_files:
   - CNAME
   - .nojekyll
@@ -203,7 +196,6 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
@@ -348,7 +340,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
   widths:
     - 480
     - 800
