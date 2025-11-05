@@ -45,7 +45,7 @@ body.sticky-bottom-footer {
   --global-text-color: #202020;
   --global-link-color: #C1272D; /* Lithuanian red */
   --global-link-hover-color: #FDB913; /* Lithuanian yellow */
-  --global-accent-color: #006A44; /* Lithuanian green */
+  --global-accent-color: #117880; /* Martinas color */
 }
 h1, h2, h3, h4, h5, h6 {
   color: var(--global-accent-color);
@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Buttons */
 .term-link {
   display: inline-block;
-  background-color: #006a44;
+  background-color: #117880; /* new main color */
   color: #fff;
   text-decoration: none;
   padding: 0.35rem 0.8rem;
@@ -222,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .term-link:hover {
-  background-color: #005a39;
+  background-color: #19929c; /* lighter hover */
   transform: scale(1.05);
 }
 
@@ -275,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-button {
   display: inline-block;
-  background-color: #006a44;
+  background-color: #117880;
   color: #fff;
   text-decoration: none;
   padding: 0.35rem 0.9rem;
@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .home-button:hover {
-  background-color: #005a39;
+  background-color: #19929c;
   transform: scale(1.05);
 }
 
@@ -370,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Reuse same link style for consistency */
 .term-link {
   display: inline-block;
-  background-color: #006a44;
+  background-color: #117880;
   color: #fff;
   text-decoration: none;
   padding: 0.35rem 0.8rem;
@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .term-link:hover {
-  background-color: #005a39;
+  background-color: #19929c;
   transform: scale(1.05);
 }
 
