@@ -32,19 +32,19 @@ It provides a transparent and open platform to support the adoption of FHIR® st
   <div class="home-section">
     <h3>Implementation Guides</h3>
     <p>Access all national HL7 FHIR® Implementation Guides, including LT Base and specialized guides for clinical domains.</p>
-    <a href="/builds/index.html" class="home-button">Go to Builds</a>
+    <a href="/builds/" class="home-button">Go to Builds</a>
   </div>
 
   <div class="home-section">
     <h3>Terminology</h3>
     <p>Browse Lithuanian FHIR® terminology resources such as code systems, value sets, and concept maps supporting national IGs.</p>
-    <a href="/terminology/index.html" class="home-button">Explore Terminology</a>
+    <a href="/terminology/" class="home-button">Explore Terminology</a>
   </div>
 
   <div class="home-section">
     <h3>Community</h3>
     <p>Join the HL7 Lithuania community, contribute on GitHub, and collaborate on open-source FHIR® projects and resources.</p>
-    <a href="/community/index.html" class="home-button">Join the Community</a>
+    <a href="/community/" class="home-button">Join the Community</a>
   </div>
 
 </div>
