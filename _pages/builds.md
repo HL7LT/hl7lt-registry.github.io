@@ -13,7 +13,10 @@ nav_order: 1
     <div class="build-content">
       <h3>LT Base</h3>
       <p>Core Lithuanian FHIR Implementation Guide with foundational profiles and terminology.</p>
-      <a href="https://build.fhir.org/ig/HL7LT/ig-lt-base" target="_blank" class="build-link">View Build</a>
+      <div class="build-buttons">
+        <a href="https://build.fhir.org/ig/HL7LT/ig-lt-base" target="_blank" class="build-link">Latest Build</a>
+        <a href="https://hl7.lt/fhir/base/history.html" target="_blank" class="build-link secondary">History</a>
+      </div>
     </div>
   </div>
 
@@ -22,7 +25,10 @@ nav_order: 1
     <div class="build-content">
       <h3>Vital Signs</h3>
       <p>Standardized observation structures for clinical vital signs data.</p>
-      <a href="https://build.fhir.org/ig/HL7LT/ig-lt-vitalsigns" target="_blank" class="build-link">View Build</a>
+      <div class="build-buttons">
+        <a href="https://build.fhir.org/ig/HL7LT/ig-lt-vitalsigns" target="_blank" class="build-link">Latest Build</a>
+        <a href="https://hl7.lt/fhir/vitalsigns/history.html" target="_blank" class="build-link secondary">History</a>
+      </div>
     </div>
   </div>
 
@@ -31,7 +37,10 @@ nav_order: 1
     <div class="build-content">
       <h3>Life Style</h3>
       <p>Guidelines for lifestyle-related health indicators and patient records.</p>
-      <a href="https://build.fhir.org/ig/HL7LT/ig-lt-lifestyle" target="_blank" class="build-link">View Build</a>
+      <div class="build-buttons">
+        <a href="https://build.fhir.org/ig/HL7LT/ig-lt-lifestyle" target="_blank" class="build-link">Latest Build</a>
+        <a href="https://hl7.lt/fhir/lifestyle/history.html" target="_blank" class="build-link secondary">History</a>
+      </div>
     </div>
   </div>
 
@@ -40,8 +49,30 @@ nav_order: 1
     <div class="build-content">
       <h3>Prevention</h3>
       <p>Implementation Guide for preventive healthcare and immunization tracking.</p>
-      <a href="#" class="build-link disabled">Coming Soon</a>
+      <div class="build-buttons">
+        <a href="#" class="build-link disabled">Coming Soon</a>
+      </div>
     </div>
   </div>
 
 </div>
+
+<style>
+.build-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.build-link.secondary {
+  background-color: #fff;
+  color: #117880;
+  border: 2px solid #117880;
+  transition: all 0.2s ease-in-out;
+}
+
+.build-link.secondary:hover {
+  background-color: #6cc9beff;
+  color: #fff;
+}
+</style>
