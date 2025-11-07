@@ -390,3 +390,43 @@ h1, h2, h3, h4, h5, h6 {
   color: #222;
   cursor: not-allowed;
 }
+
+
+/******************************************************************************
+ * Dark Mode Adjustments
+ ******************************************************************************/
+[data-theme="dark"] {
+  .community-intro,
+  .mission-box,
+  .term-card,
+  .term-content {
+    background-color: #1e1e1e !important;
+    color: #ddd !important;
+  }
+
+  .mission-box {
+    border-left: 4px solid #009688;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  }
+
+  .term-card {
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .term-link {
+    background-color: #00796b !important;
+    color: #fff !important;
+  }
+
+  .term-link:hover {
+    background-color: #009688 !important;
+  }
+
+  a {
+    color: #4fc3f7;
+  }
+
+  a:hover {
+    color: #80deea;
+  }
+}
