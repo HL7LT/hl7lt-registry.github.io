@@ -392,10 +392,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/******************************************************************************
+//******************************************************************************
  * Dark Mode Adjustments
  ******************************************************************************/
-[data-theme="dark"] {
+html[data-theme-setting="dark"] {
   .community-intro,
   .mission-box,
   .term-card,
@@ -409,17 +409,24 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
   }
 
+  /* "How to Contribute" cards */
   .term-card {
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: #242424 !important; /* darker neutral gray */
+    border-color: rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 3px 12px rgba(255, 255, 255, 0.05) !important;
+  }
+
+  .term-content p {
+    color: #ccc !important;
   }
 
   .term-link {
-    background-color: #00796b !important;
+    background-color: #19929c !important;
     color: #fff !important;
   }
 
   .term-link:hover {
-    background-color: #009688 !important;
+    background-color: #22b8c8 !important;
   }
 
   a {
