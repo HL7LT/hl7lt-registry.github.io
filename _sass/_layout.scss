@@ -395,36 +395,50 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Dark mode fix for Terminology + Community cards --- */
 html[data-theme-setting="dark"] {
-  /* Make the whole card white */
+
+  /* --- Terminology / Community Cards --- */
   .term-card {
     background: #fff !important;
     color: #000 !important;
-    border: 2px solid rgba(0,0,0,.1) !important;
-    box-shadow: 0 3px 12px rgba(0,0,0,.1) !important;
+    border: 2px solid rgba(0, 0, 0, .1) !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .1) !important;
   }
 
-  /* IMPORTANT: reset the inner container that was staying dark */
   .term-card .term-content {
-    background: #fff !important;   /* removes the black bar */
+    background: #fff !important;
     color: #000 !important;
   }
 
-  /* Text in the card */
   .term-card h3,
   .term-card p {
     color: #000 !important;
   }
 
-  /* Buttons in the card */
   .term-card .term-link {
     background: #117880 !important;
     color: #fff !important;
     border: none !important;
     box-shadow: none !important;
   }
+
   .term-card .term-link:hover {
-    background: #149eaa !important; /* lighter hover */
+    background: #149eaa !important;
+  }
+
+  /* --- Community page adjustments --- */
+  .community-intro {
+    color: #ffffff !important; /* readable on dark background */
+  }
+
+  .mission-box {
+    background-color: #ffffff !important; /* white box */
+    color: #000000 !important;             /* black text */
+    border-left: 4px solid #009688 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  .mission-box p,
+  .mission-box li {
+    color: #000000 !important;
   }
 }
-
-
