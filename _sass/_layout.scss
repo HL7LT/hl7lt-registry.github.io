@@ -394,10 +394,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 html[data-theme-setting="dark"] {
-  /* Keep page dark */
+  /* Keep general dark theme */
   .community-intro,
-  .mission-box,
-  .term-content {
+  .mission-box {
     background-color: #1e1e1e !important;
     color: #ddd !important;
   }
@@ -407,29 +406,34 @@ html[data-theme-setting="dark"] {
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
   }
 
-  /* "How to Contribute" cards - now bright */
+  /* White cards for "How to Contribute" and other .term-card boxes */
   .term-card {
     background-color: #ffffff !important; /* white background */
-    color: #000000 !important; /* black text */
+    color: #000000 !important;
     border: 2px solid rgba(0, 0, 0, 0.1) !important;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1) !important;
   }
 
-  .term-content p {
-    color: #000 !important; /* ensure paragraph text stays black */
+  /* Remove dark inner blocks */
+  .term-card .term-content,
+  .term-card .term-box {
+    background-color: transparent !important;
+    color: #000 !important;
   }
 
-  /* Buttons inside term cards */
+  /* Buttons inside cards */
   .term-link {
     background-color: #117880 !important;
     color: #ffffff !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 
   .term-link:hover {
     background-color: #149eaa !important;
   }
 
-  /* Links elsewhere on page */
+  /* Links elsewhere */
   a {
     color: #4fc3f7;
   }
