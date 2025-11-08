@@ -393,52 +393,38 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* --- Dark mode fix for Terminology + Community cards --- */
 html[data-theme-setting="dark"] {
-  /* Keep general dark theme */
-  .community-intro,
-  .mission-box {
-    background-color: #1e1e1e !important;
-    color: #ddd !important;
-  }
-
-  .mission-box {
-    border-left: 4px solid #009688;
-    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
-  }
-
-  /* White cards for "How to Contribute" and other .term-card boxes */
+  /* Make the whole card white */
   .term-card {
-    background-color: #ffffff !important; /* white background */
-    color: #000000 !important;
-    border: 2px solid rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1) !important;
+    background: #fff !important;
+    color: #000 !important;
+    border: 2px solid rgba(0,0,0,.1) !important;
+    box-shadow: 0 3px 12px rgba(0,0,0,.1) !important;
   }
 
-  /* Remove dark inner blocks */
-  .term-card .term-content,
-  .term-card .term-box {
-    background-color: transparent !important;
+  /* IMPORTANT: reset the inner container that was staying dark */
+  .term-card .term-content {
+    background: #fff !important;   /* removes the black bar */
     color: #000 !important;
   }
 
-  /* Buttons inside cards */
-  .term-link {
-    background-color: #117880 !important;
-    color: #ffffff !important;
+  /* Text in the card */
+  .term-card h3,
+  .term-card p {
+    color: #000 !important;
+  }
+
+  /* Buttons in the card */
+  .term-card .term-link {
+    background: #117880 !important;
+    color: #fff !important;
     border: none !important;
     box-shadow: none !important;
   }
-
-  .term-link:hover {
-    background-color: #149eaa !important;
-  }
-
-  /* Links elsewhere */
-  a {
-    color: #4fc3f7;
-  }
-
-  a:hover {
-    color: #80deea;
+  .term-card .term-link:hover {
+    background: #149eaa !important; /* lighter hover */
   }
 }
+
+
