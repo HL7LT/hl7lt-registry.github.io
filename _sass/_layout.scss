@@ -394,9 +394,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 html[data-theme-setting="dark"] {
+  /* Keep page dark */
   .community-intro,
   .mission-box,
-  .term-card,
   .term-content {
     background-color: #1e1e1e !important;
     color: #ddd !important;
@@ -407,26 +407,29 @@ html[data-theme-setting="dark"] {
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
   }
 
-  /* "How to Contribute" cards */
+  /* "How to Contribute" cards - now bright */
   .term-card {
-    background-color: #242424 !important; /* darker neutral gray */
-    border-color: rgba(255, 255, 255, 0.08) !important;
-    box-shadow: 0 3px 12px rgba(255, 255, 255, 0.05) !important;
+    background-color: #ffffff !important; /* white background */
+    color: #000000 !important; /* black text */
+    border: 2px solid rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1) !important;
   }
 
   .term-content p {
-    color: #ccc !important;
+    color: #000 !important; /* ensure paragraph text stays black */
   }
 
+  /* Buttons inside term cards */
   .term-link {
-    background-color: #19929c !important;
-    color: #fff !important;
+    background-color: #117880 !important;
+    color: #ffffff !important;
   }
 
   .term-link:hover {
-    background-color: #22b8c8 !important;
+    background-color: #149eaa !important;
   }
 
+  /* Links elsewhere on page */
   a {
     color: #4fc3f7;
   }
