@@ -47,7 +47,7 @@ nav_order: 1
   <div class="build-card">
     <div class="build-image" style="background-image: url('{{ '/assets/img/screening.png' | relative_url }}');"></div>
     <div class="build-content">
-      <h3>Prevention</h3>
+      <h3>Screening</h3>
       <p>Implementation Guide for preventive healthcare and immunization tracking.</p>
       <div class="build-buttons">
         <a href="#" class="build-link disabled">Coming Soon</a>
